@@ -15,3 +15,5 @@
 /tmp
 
 list.txt
+.rvmrc
+config/database.yml
