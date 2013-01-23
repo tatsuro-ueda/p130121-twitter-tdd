@@ -17,3 +17,4 @@
 list.txt
 .rvmrc
 config/database.yml
+/vendor/*
