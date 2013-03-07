@@ -7,8 +7,10 @@ describe "TweetPages" do
     before { visit tweets_path }
   	subject {page}
     context do
-			its(:status_code) {should == 200}
-			it {should have_selector 'input'}
+			it {
+        subject.status_code.should == 200
+        should have_selector 'input'
+      }
     end
 
     context 'show tweet list' do
