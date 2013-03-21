@@ -1,7 +1,9 @@
+#-*- coding: utf-8 -*-
+
 require 'spec_helper'
 
-describe "TweetPages" do
-  describe "GET /tweet_pages" do
+describe 'TweetPages' do
+  describe 'GET /tweet_pages' do
     let!(:tweet) { create(:tweet) }
 
     before { visit tweets_path }
@@ -23,4 +25,15 @@ describe "TweetPages" do
       it { Tweet.all.count.should == 4 }
     end
   end
+
+  describe 'POST /tweet' do
+    context '「TDD」とtweetするとき' do
+      before do
+        Tweet.create(content: 'TDD')
+      end
+
+      it { Tweet.all.last.content.should == 'TDD' }
+    end
+  end
 end
+
