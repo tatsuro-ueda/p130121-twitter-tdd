@@ -18,3 +18,7 @@ list.txt
 .rvmrc
 config/database.yml
 /vendor/*
+
+.idea/p130121-twitter-tdd.iml
+
+.idea/workspace.xml

@@ -1,6 +1,9 @@
 <h1>Tweets#index</h1>
 <p>Find me in app/views/tweets/index.html.erb</p>
-<input type="text" />
+<form method="POST" action="tweets">
+  <input type="text" id="tweet"/>
+  <button id="submit">送信</button>
+</form>
 <table>
   <% @tweets.each do |tweet| %>
     <tr>
