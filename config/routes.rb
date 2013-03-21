@@ -2,6 +2,7 @@ P130121TwitterTdd::Application.routes.draw do  # The priority is based upon orde
   # first created -> highest priority.
 
   get 'tweets' => 'tweets#index'
+  post 'tweets' => 'tweets#create'
 
 
   # Sample of regular route:

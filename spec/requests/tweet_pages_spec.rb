@@ -32,7 +32,6 @@ describe 'TweetPages' do
       before do
         fill_in "tweet", with: 'TDD'
         click_on "送信"
-        # Tweet.create(content: 'TDD')
       end
 
       it { Tweet.all.last.content.should == 'TDD' }
